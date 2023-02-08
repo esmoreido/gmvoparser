@@ -10,8 +10,10 @@ library(stringi)
 library(dplyr)
 setwd("d:/maps/GMVO/parser")
 
-# считываем логин-пароль из файла
-credentials <- read.csv('gmvo_pass.txt')
+# считываем логин-пароль из файла, при клонировании надо сделать заново
+# login,pass
+# <your_login>,<your_pass>
+credentials <- read.csv('gmvo_pass.txt') 
 # заход на страницу авторизации
 login <- 'https://gmvo.skniivh.ru/index.php?id=1'
 # открываем сессию
